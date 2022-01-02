@@ -1,4 +1,5 @@
 FROM rust:latest
 WORKDIR /pj
 COPY . .
-CMD ["cargo","run"]
+RUN rustc src/main.rs
+CMD ["./main"]
